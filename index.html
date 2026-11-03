@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bright Education — Ta’limda yangi daraja</title>
+<meta name="description" content="Bright Education — zamonaviy ta’lim markazi. English, Matematika, IT, Fizika, SAT, Ona tili va Adabiyot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1030;--ink2:#555b80;--bg:#eef1fb;--glass:rgba(255,255,255,.55);--gb:rgba(255,255,255,.8);--line:rgba(20,30,90,.1);--vio:#4f46e5;--sky:#06b6d4;--g:linear-gradient(135deg,#4f46e5,#06b6d4);--sh:inset 0 1px 0 rgba(255,255,255,.9),0 24px 48px -28px rgba(30,40,130,.42);--e:cubic-bezier(.22,1,.36,1);--paper:var(--bg);--card:var(--glass);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ink:#eaf0ff;--ink2:#9aa3d0;--bg:#070a1f;--glass:rgba(255,255,255,.06);--gb:rgba(255,255,255,.16);--line:rgba(255,255,255,.1);--sh:inset 0 1px 0 rgba(255,255,255,.14),0 24px 48px -28px #000}}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;background:radial-gradient(38% 34% at 15% 18%,#6366f166,transparent 70%),radial-gradient(34% 34% at 86% 14%,#22d3ee66,transparent 70%),radial-gradient(40% 40% at 70% 88%,#a78bfa55,transparent 70%);filter:blur(36px);animation:dr 26s ease-in-out infinite alternate}
+@keyframes dr{to{transform:translate3d(-4%,3%,0) scale(1.08)}}
+h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1.1}a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:auto;padding:0 22px}section{padding:96px 0}
+h2{font-size:clamp(28px,4vw,44px);margin-bottom:14px}.sub{color:var(--ink2);max-width:58ch;margin-bottom:38px}
+.c,.d,.st,.r,.t,.rv blockquote,details,.fl,.tag,.help{background:var(--glass);border:1px solid var(--gb);box-shadow:var(--sh);backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font:inherit;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:transform .5s var(--e),box-shadow .5s var(--e)}
+.btn:hover{transform:translateY(-2px)}.p{background:var(--g);color:#fff;box-shadow:inset 0 1px 0 #fff6,0 14px 30px -12px #4f46e5}.o{background:var(--glass);border:1px solid var(--gb);color:var(--ink);backdrop-filter:blur(20px)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+header{position:sticky;top:12px;z-index:20;padding:0 14px}.nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 10px 0 22px;border-radius:999px;background:var(--glass);border:1px solid var(--gb);box-shadow:var(--sh);backdrop-filter:blur(24px) saturate(1.8);-webkit-backdrop-filter:blur(24px) saturate(1.8)}
+.logo{font-weight:800;font-size:17px;letter-spacing:-.03em}.logo b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:28px;font-weight:600;font-size:14px;color:var(--ink2)}nav a{transition:color .3s}nav a:hover{color:var(--ink)}
+.burger{display:none;background:none;border:0;font-size:24px;color:var(--ink);cursor:pointer}
+.tag{display:inline-block;padding:5px 14px;border-radius:999px;font-weight:600;font-size:13px;color:var(--vio);margin-bottom:18px}
+.hero{padding:70px 0 50px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(38px,6.2vw,68px);margin-bottom:20px;font-weight:800}.hero h1 span{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.l{font-size:18px;color:var(--ink2);max-width:50ch;margin-bottom:30px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:40px;margin-top:44px}.stats b{font-size:32px;font-weight:700;letter-spacing:-.04em;display:block}.stats span{color:var(--ink2);font-size:14px}
+.vis{position:relative;height:420px}
+.vis .big{position:absolute;inset:30px 20px;background:var(--g);display:grid;place-items:center;color:#fff;text-align:center;border-radius:62% 38% 55% 45%/48% 58% 42% 52%;animation:mo 14s ease-in-out infinite;box-shadow:inset 0 2px 30px #fff5,inset 0 -30px 60px #0a1a6055,0 40px 80px -30px #4f46e5}
+.vis .big::after{content:"";position:absolute;inset:8% 14% auto 14%;height:34%;border-radius:50%;background:linear-gradient(#fff6,transparent);filter:blur(6px)}
+@keyframes mo{50%{border-radius:42% 58% 40% 60%/58% 42% 58% 42%;transform:rotate(4deg)}}
+.vis .big b{font-size:62px;font-weight:800;letter-spacing:-.05em;display:block;line-height:1}.vis .big div{position:relative;z-index:1;font-weight:600;letter-spacing:.02em}
+.fl{position:absolute;border-radius:20px;padding:12px 16px;font-weight:700;font-size:14px;display:flex;gap:12px;align-items:center;animation:fl 9s ease-in-out infinite}
+.fl i{font-style:normal;width:38px;height:38px;border-radius:12px;background:var(--g);display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700}.fl small{display:block;font-weight:500;color:var(--ink2);font-size:12px}
+.f1{left:-8px;top:40px}.f2{right:-6px;top:170px;animation-delay:-3s}.f3{left:34px;bottom:10px;animation-delay:-6s}@keyframes fl{50%{transform:translateY(-8px)}}
+.mq{overflow:hidden;border-block:1px solid var(--line);color:var(--ink2);padding:18px 0;white-space:nowrap;font-weight:600;font-size:14px;letter-spacing:.08em}.mq div{display:inline-block;animation:mq 50s linear infinite}.mq span{margin:0 22px;color:var(--vio)}@keyframes mq{to{transform:translateX(-50%)}}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.steps{display:grid;gap:12px}
+.st{border-radius:20px;padding:18px 22px;display:flex;gap:16px;align-items:center;font-weight:600}.st b{width:34px;height:34px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-size:13px}
+.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.c,.d,.r,.t,.rv blockquote{border-radius:24px;transition:transform .6s var(--e),border-color .4s,box-shadow .6s var(--e)}
+.c{padding:26px}.c:hover,.d:hover,.r:hover,.t:hover{transform:translateY(-5px);border-color:#4f46e566}.c i{font-style:normal;display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--g);color:#fff;font-size:18px}.c h3{font-size:17px;margin:16px 0 8px;letter-spacing:-.02em}.c p{color:var(--ink2);font-size:14.5px}
+.dir{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.d{padding:20px;display:flex;flex-direction:column;gap:6px;min-height:176px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.d b{display:grid;place-items:center;min-width:44px;height:44px;width:max-content;padding:0 10px;border-radius:14px;background:linear-gradient(135deg,#4f46e522,#06b6d422);border:1px solid var(--gb);font-size:15px;font-weight:700;color:var(--vio);margin-bottom:10px}
+.d h3{font-size:16px;letter-spacing:-.02em}.d p{color:var(--ink2);font-size:13px;line-height:1.5}.d em{font-style:normal;margin-top:auto;font-weight:600;font-size:13px;color:var(--vio)}
+.help{margin-top:22px;border-radius:26px;padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.help h3{font-size:22px}
+.res{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.r{padding:26px}.r small{color:var(--ink2);font-weight:600;font-size:12px;letter-spacing:.06em}.r h3{margin:6px 0 18px;font-size:17px}.r div{font-size:26px;font-weight:700;letter-spacing:-.04em}.r div s{color:var(--ink2);font-size:18px;font-weight:500}.r div b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.q{text-align:center;padding:100px 0}.q h2{max-width:20ch;margin:14px auto 0;font-size:clamp(28px,4.6vw,50px)}.q small{color:var(--vio);font-weight:600}
+.tch{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.t{padding:30px;text-align:center}
+.av{width:96px;height:96px;border-radius:50%;margin:0 auto 16px;background:var(--g);display:grid;place-items:center;color:#fff;font-size:26px;font-weight:700;box-shadow:inset 0 2px 12px #fff5,0 18px 30px -14px #4f46e5}
+.t span.b{display:inline-block;background:#4f46e51f;color:var(--vio);padding:3px 12px;border-radius:99px;font-weight:700;font-size:12px;margin-bottom:10px}.t p{color:var(--ink2);font-size:14px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.rv blockquote{padding:28px;font-size:15px}.rv b{display:block;margin-top:16px}.rv small{color:var(--vio);font-weight:600}
+.pr{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.pr div{padding-top:20px;border-top:2px solid transparent;border-image:var(--g) 1}.pr b{color:var(--vio);font-size:14px}.pr h3{font-size:18px;margin:6px 0}.pr p{color:var(--ink2);font-size:14px}
+details{border-radius:20px;padding:18px 24px;margin-bottom:10px;max-width:780px}summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}summary::after{content:"+";color:var(--vio);font-size:22px;line-height:1}details[open] summary::after{content:"–"}details p{margin-top:10px;color:var(--ink2)}
+.fin{position:relative;overflow:hidden;background:var(--g);color:#fff;border-radius:40px;padding:64px 30px;text-align:center;box-shadow:inset 0 1px 0 #fff6,0 40px 80px -40px #4f46e5}
+.fin::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(#fff4,transparent 65%);top:-200px;left:-100px}.fin>*{position:relative}.fin p{max-width:50ch;margin:12px auto 26px;opacity:.9}.fin .btn.o{background:#ffffff26;color:#fff;border-color:#fff4}.fin .btn.p{background:#fff;color:var(--vio);box-shadow:none}
+footer{padding:50px 0 30px;border-top:1px solid var(--line);margin-top:70px}.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:26px}footer h4{margin-bottom:10px;font-size:14px}footer a{display:block;color:var(--ink2);font-size:14px;padding:3px 0;transition:color .3s}footer a:hover{color:var(--vio)}footer p{color:var(--ink2);font-size:14px;max-width:32ch}.cp{margin-top:32px;color:var(--ink2);font-size:13px}
+dialog{border:1px solid var(--gb);border-radius:30px;padding:32px;width:min(440px,92vw);background:var(--bg);color:var(--ink);box-shadow:0 40px 90px -30px #000a;margin:auto}dialog::backdrop{background:#0b103099;backdrop-filter:blur(10px)}dialog[open]{animation:dp .5s var(--e)}@keyframes dp{from{opacity:0;transform:scale(.94) translateY(14px)}}
+dialog h3{font-size:24px;margin-bottom:6px}.x{position:absolute;right:20px;top:16px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--ink)}
+label{display:block;font-weight:600;font-size:13px;margin:14px 0 5px}input,select{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--glass);color:var(--ink);font:inherit;transition:border-color .3s,box-shadow .3s}input:focus,select:focus{outline:0;border-color:var(--vio);box-shadow:0 0 0 4px #4f46e51f}
+.ct{display:block;margin-top:10px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;font-weight:600;font-size:14px}.ok{color:#0a9d6a;font-weight:600;margin-top:12px}
+#cb{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;width:62px;height:62px;border-radius:50%;border:0;background:var(--g);color:#fff;font-size:26px;cursor:pointer;box-shadow:inset 0 1px 0 #fff7,0 16px 34px -10px #4f46e5;transition:transform .5s var(--e)}#cb:hover{transform:scale(1.07)}
+#cb::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #4f46e5;animation:pu 3s infinite}@keyframes pu{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(1.6)}}
+#cb .n{position:absolute;top:-2px;right:-2px;width:20px;height:20px;border-radius:50%;background:#ef4444;color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
+#cw{position:fixed;right:20px;bottom:calc(94px + env(safe-area-inset-bottom,0px));z-index:50;width:min(396px,calc(100vw - 24px));height:min(620px,calc(100dvh - 130px));background:var(--glass);backdrop-filter:blur(30px) saturate(1.8);-webkit-backdrop-filter:blur(30px) saturate(1.8);border-radius:30px;box-shadow:var(--sh),0 40px 90px -30px #000a;border:1px solid var(--gb);display:flex;flex-direction:column;overflow:hidden;transform-origin:bottom right;transition:all .55s var(--e)}
+#cw.h{opacity:0;transform:scale(.8) translateY(24px);pointer-events:none}
+.ch{padding:16px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}.ch .a{width:42px;height:42px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-size:18px;position:relative}.ch .a::after{content:"";position:absolute;right:-1px;bottom:-1px;width:11px;height:11px;border-radius:50%;background:#22c55e;border:2px solid var(--bg)}.ch b{display:block;font-size:15px;font-weight:700}.ch small{color:var(--ink2);font-size:12px}.ch button{margin-left:auto;background:var(--glass);border:1px solid var(--line);color:var(--ink);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:18px}
+#ms{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.m{max-width:86%;padding:11px 15px;border-radius:20px;font-size:14.5px;animation:in .5s var(--e)}.m a{color:var(--vio);font-weight:700;text-decoration:underline}@keyframes in{from{opacity:0;transform:translateY(10px) scale(.97);filter:blur(4px)}}
+.m.b{background:var(--glass);border:1px solid var(--gb);border-bottom-left-radius:6px;align-self:flex-start}.m.u{background:var(--g);color:#fff;border-bottom-right-radius:6px;align-self:flex-end;box-shadow:inset 0 1px 0 #fff5}
+.ty{display:flex;gap:4px;padding:14px 16px}.ty i{width:7px;height:7px;border-radius:50%;background:var(--vio);animation:bn 1.1s infinite}.ty i:nth-child(2){animation-delay:.15s}.ty i:nth-child(3){animation-delay:.3s}@keyframes bn{50%{transform:translateY(-5px);opacity:.4}}
+.qk{display:flex;gap:8px;flex-wrap:wrap;padding:4px 0}.qk button{border:1px solid #4f46e544;background:var(--glass);color:var(--vio);padding:8px 14px;border-radius:99px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all .4s var(--e)}.qk button:hover{background:var(--vio);color:#fff;transform:translateY(-1px)}
+.cf{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.cf input{border-radius:99px;padding:12px 18px}.cf button{width:46px;border-radius:50%;border:0;background:var(--g);color:#fff;font-size:16px;cursor:pointer;flex:none;transition:transform .4s var(--e)}.cf button:hover{transform:scale(1.08)}
+@media(max-width:900px){.hg,.ab{grid-template-columns:1fr}.cards4,.res,.pr{grid-template-columns:1fr 1fr}.dir{grid-template-columns:repeat(2,1fr)}.tch,.rv{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}nav{display:none;position:absolute;top:70px;left:14px;right:14px;background:var(--bg);border:1px solid var(--gb);border-radius:24px;flex-direction:column;padding:18px 22px;gap:14px}nav.on{display:flex}.burger{display:block}.vis{height:340px}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.hero .tag,.hero h1,.hero .l,.hero .cta,.stats,.vis{animation:up 1.1s var(--e) both}.hero h1{animation-delay:.08s}.hero .l{animation-delay:.16s}.hero .cta{animation-delay:.24s}.stats{animation-delay:.32s}.vis{animation-delay:.2s}@keyframes up{from{opacity:0;transform:translateY(22px);filter:blur(10px)}}
+/* ---- motion layer ---- */
+#pg{position:fixed;top:0;left:0;right:0;height:3px;background:var(--g);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+#gl{position:fixed;left:0;top:0;width:520px;height:520px;border-radius:50%;background:radial-gradient(#4f46e526,transparent 65%);pointer-events:none;z-index:-1;will-change:transform}
+.nav{transition:height .6s var(--e),box-shadow .6s var(--e),background .6s}header.s .nav{height:52px;box-shadow:var(--sh),0 16px 40px -20px rgba(30,40,130,.45)}
+.hero h1{animation:none}.wd{display:inline-block;font-style:normal;opacity:0;transform:translateY(.55em) rotate(3deg);filter:blur(10px);animation:wd 1.2s var(--e) forwards;animation-delay:calc(var(--i)*.1s + .1s)}@keyframes wd{to{opacity:1;transform:none;filter:none}}
+.hero h1 span{background-size:220% 100%;animation:sh 9s ease-in-out infinite alternate}@keyframes sh{to{background-position:100% 0}}
+.hero .vis .big{translate:calc(var(--px,0)*-26px) calc(var(--py,0)*-20px);transition:translate 1s var(--e)}
+.fl{transition:translate 1s var(--e)}.f1{translate:calc(var(--px,0)*38px) calc(var(--py,0)*28px)}.f2{translate:calc(var(--px,0)*-44px) calc(var(--py,0)*22px)}.f3{translate:calc(var(--px,0)*30px) calc(var(--py,0)*-34px)}
+.rev{opacity:0;transform:translateY(40px) scale(.97);filter:blur(10px);transition:opacity 1.1s var(--e),transform 1.1s var(--e),filter 1.1s var(--e)!important;transition-delay:var(--d,0s)!important}
+.rev.in{opacity:1;transform:none;filter:none}
+.tilt{position:relative;will-change:transform}.tilt:hover{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-6px);transition:transform .35s var(--e),border-color .4s,box-shadow .6s}
+.tilt::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.6),transparent 62%);opacity:0;transition:opacity .5s;pointer-events:none;mix-blend-mode:soft-light}.tilt:hover::before{opacity:1}
+.btn{transition:transform .5s var(--e),translate .45s var(--e),box-shadow .5s var(--e)}.btn.p{position:relative;overflow:hidden}
+.btn.p::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,#fff7 50%,transparent 70%);transform:translateX(-130%);transition:transform 1s var(--e)}.btn.p:hover::after{transform:translateX(130%)}
+.mq:hover div{animation-play-state:paused}
+details{interpolate-size:allow-keywords}details::details-content{height:0;overflow:clip;transition:height .6s var(--e),content-visibility .6s allow-discrete}details[open]::details-content{height:auto}
+summary::after{transition:transform .5s var(--e)}details[open] summary::after{transform:rotate(180deg)}
+#cb{animation:pop 1s var(--e) 1.2s backwards}@keyframes pop{from{transform:scale(0) rotate(-120deg);opacity:0}}
+#tz{position:fixed;right:92px;bottom:calc(30px + env(safe-area-inset-bottom,0px));z-index:49;background:var(--bg);border:1px solid var(--gb);box-shadow:var(--sh),0 20px 40px -20px #000a;border-radius:18px 18px 4px 18px;padding:12px 16px;font-size:14px;cursor:pointer;animation:tz 1s var(--e) both}#tz b{color:var(--vio)}@keyframes tz{from{opacity:0;transform:translateX(20px) scale(.9);filter:blur(6px)}}
+@media(max-width:520px){#tz{display:none}}
+@media(prefers-reduced-motion:reduce){.wd,.rev{opacity:1!important;transform:none!important;filter:none!important}#pg,#gl{display:none}}
+/* ---- hovers, contact, chat ui ---- */
+.btn{transition:transform .5s var(--e),translate .45s var(--e),box-shadow .6s var(--e),background-size .7s var(--e),background-position .7s var(--e),color .4s,border-color .4s}
+.btn.p{background-image:linear-gradient(110deg,#4f46e5,#06b6d4 50%,#4f46e5);background-size:220% 100%;background-position:0 0}
+.btn.p:hover{background-position:100% 0;box-shadow:inset 0 1px 0 #fff6,0 22px 44px -14px #4f46e5}
+.btn.o{background-color:var(--glass);background-image:var(--g);background-repeat:no-repeat;background-size:100% 0;background-position:bottom center}
+.btn.o:hover{background-size:100% 100%;color:#fff;border-color:transparent}
+.fin .btn.o:hover{background:#fff;color:var(--vio)}.fin .btn.p:hover{box-shadow:0 20px 44px -14px #0b1030aa}
+.ar{display:inline-block;transition:transform .55s var(--e)}.btn:hover .ar,.d:hover .ar{transform:translate(5px,-2px)}
+.btn:active,.qk button:active,.cf button:active{transform:scale(.96)}
+nav a{position:relative}nav a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;border-radius:2px;background:var(--g);transform:scaleX(0);transform-origin:right;transition:transform .55s var(--e)}nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.d b,.c i{transition:transform .6s var(--e),background .5s,color .4s,border-color .4s}.d:hover b{background:var(--g);color:#fff;border-color:transparent;transform:rotate(-6deg) scale(1.08)}.c:hover i{transform:rotate(-8deg) scale(1.1)}
+footer .fg a:not(.logo){transition:color .3s,transform .5s var(--e)}footer .fg a:not(.logo):hover{transform:translateX(5px)}
+.burger,.x{transition:transform .5s var(--e)}.x:hover{transform:rotate(90deg)}
+.ct{display:flex;align-items:center;gap:14px;margin-top:12px;padding:14px 16px;border-radius:18px;background:var(--glass);transition:transform .5s var(--e),border-color .4s,box-shadow .6s var(--e),background .5s}
+.ct i{width:42px;height:42px;border-radius:14px;background:var(--g);display:grid;place-items:center;flex:none;transition:transform .6s var(--e)}.ct i svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ct small{display:block;color:var(--ink2);font-weight:500;font-size:12px}.ct b{font-weight:700;font-size:16px;letter-spacing:-.01em}.ct .go{margin-left:auto;color:var(--vio);transition:transform .55s var(--e)}
+.ct:hover{transform:translateY(-3px);border-color:#4f46e566;box-shadow:0 18px 36px -20px #4f46e5;background:var(--gb)}.ct:hover i{transform:rotate(-8deg) scale(1.08)}.ct:hover .go{transform:translateX(6px)}
+.ch .a{animation:ring 3s ease-in-out infinite}@keyframes ring{0%,100%{box-shadow:0 0 0 3px #4f46e522}50%{box-shadow:0 0 0 8px #4f46e500}}
+.ch small::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#22c55e;margin-right:6px;animation:bl 2s infinite}@keyframes bl{50%{opacity:.3}}
+.ch button{transition:transform .5s var(--e),background .4s}.ch button:hover{background:var(--gb);transform:rotate(90deg)}.ch #cr{margin-left:auto}.ch #cr:hover{transform:rotate(-180deg)}.ch #cc{margin-left:6px}
+#ms{background:radial-gradient(60% 40% at 100% 0,#4f46e514,transparent),radial-gradient(50% 40% at 0 100%,#06b6d414,transparent)}
+.tm{display:block;font-size:10.5px;opacity:.6;margin-top:3px;text-align:right}
+.m.wc{align-self:stretch;max-width:100%;text-align:center;background:var(--glass);border:1px solid var(--gb);border-radius:24px;padding:22px 18px 16px;box-shadow:var(--sh)}.m.wc b{font-size:17px;display:block}.m.wc p{color:var(--ink2);font-size:13.5px;margin-top:4px}
+.wa{width:54px;height:54px;margin:0 auto 12px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 14px 28px -10px #4f46e5;animation:fl 6s ease-in-out infinite}
+.qk.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}.qk.tiles button{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:18px;border:1px solid var(--gb);background:var(--glass);color:var(--ink);font-weight:600;font-size:14px;text-align:left;box-shadow:var(--sh)}
+.qk.tiles button i{font-style:normal;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#4f46e522,#06b6d422);display:grid;place-items:center;transition:transform .5s var(--e)}
+.qk.tiles button:hover{background:var(--glass);color:var(--ink);transform:translateY(-3px);border-color:#4f46e566;box-shadow:0 16px 30px -18px #4f46e5}.qk.tiles button:hover i{transform:scale(1.15) rotate(-6deg)}
+.cf button{opacity:.5;transform:scale(.92);transition:all .5s var(--e)}.cf.has button{opacity:1;transform:none}.cf.has button:hover{transform:scale(1.1) rotate(-8deg)}
+@media(max-width:520px){#cw{left:12px;right:12px;width:auto;bottom:calc(88px + env(safe-area-inset-bottom,0px));height:calc(100dvh - 120px)}}
+/* ---- smooth pass: lighter rendering, softer easing ---- */
+:root{--e:cubic-bezier(.25,.8,.25,1);--g2:rgba(255,255,255,.74)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--g2:rgba(255,255,255,.07)}}
+body::before{inset:0;filter:none;animation:none}
+.c,.d,.st,.r,.t,.rv blockquote,details,.fl,.tag,.help{background:var(--g2);backdrop-filter:none;-webkit-backdrop-filter:none}
+#cw{background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:none;-webkit-backdrop-filter:none}
+.hero h1 span{animation:none}
+@keyframes mo{50%{transform:rotate(5deg) scale(1.03)}}
+@keyframes up{from{opacity:0;transform:translateY(22px)}}
+@keyframes in{from{opacity:0;transform:translateY(10px) scale(.97)}}
+@keyframes tz{from{opacity:0;transform:translateX(20px) scale(.9)}}
+.wd{filter:none}.rev{filter:none;transform:translateY(32px)}.rev.in{filter:none}
+.vis .big{border-radius:62% 38% 55% 45%/48% 58% 42% 52%}
+.tilt{will-change:auto}.tilt:hover{will-change:transform;transition:transform .6s var(--e),border-color .5s,box-shadow .7s var(--e)}
+.tilt::before{mix-blend-mode:normal;background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.26),transparent 62%)}
+.c,.d,.r,.t,.rv blockquote,.st{transition:transform .7s var(--e),border-color .5s,box-shadow .7s var(--e)}
+.av {
+  width: 80px;          /* Avatarning kengligi */
+  height: 80px;         /* Avatarning balandligi */
+  border-radius: 50%;   /* Doira shakliga keltirish */
+  overflow: hidden;     /* Rasmni doiradan chiqib ketmasligi uchun */
+  margin: 0 auto 12px;  /* Markazlashtirish */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Rasmning nisbati (proportion) buzilmasdan sig'ishi uchun */
+}
+</style>
+<head>
+    <link rel="icon" type="image/png" href="bss.png">
+<style>
+#fd{max-height:88vh;overflow-y:auto}
+#fd .tb2{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+#fd .tn{font-weight:700;font-size:15px;margin-bottom:2px}
+#fd .nl{color:var(--ink2);font-size:13px;margin-top:6px}
+#fd .sl .si{font-style:normal;color:#fff;font-size:18px;font-weight:700}
+#fd .fc{width:100%;margin-top:20px}
+</style>
+</head>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="#">BRIGHT<b>EDU</b></a>
+<nav id="nv"><a href="#about">Biz haqimizda</a><a href="#directions">Yo‘nalishlar</a><a href="#results">Natijalar</a><a href="#teachers">Ustozlar</a><a href="#faq">FAQ</a></nav>
+<div style="display:flex;gap:10px;align-items:center"><a class="btn o" id="authBtn" href="auth.html" style="padding:10px 18px">KIRISH</a><button class="btn p" data-open style="padding:10px 18px">Bog‘lanish ↗</button><button class="burger" id="bg" aria-label="Menyu">☰</button></div>
+</div></header>
+
+<main>
+<div class="hero"><div class="w hg">
+<div><span class="tag">Kelajagingiz uchun bilim</span>
+<h1>Bilimni <span>kelajakka</span> aylantiring.</h1>
+<p class="l">Bright Education — zamonaviy metodika, kuchli ustozlar va real natijalarni birlashtirgan ta’lim markazi.</p>
+<div class="cta"><button class="btn p" data-open>Bepul konsultatsiya ↗</button><a class="btn o" href="#directions">Yo‘nalishlarni ko‘rish</a></div>
+<div class="stats"><div><b data-to="2000">0+</b><span>O‘quvchi</span></div><div><b data-to="20">0+</b><span>Ustoz</span></div><div><b data-to="15">0+</b><span>Yo‘nalish</span></div></div></div>
+<div class="vis"><div class="big"><div><b>15+</b>YO‘NALISH<br><small style="opacity:.8">English · Math · IT</small></div></div>
+<div class="fl f1"><i>∑</i><div>Matematika<small>Aniq fanlar</small></div></div>
+<div class="fl f2"><i>&lt;/&gt;</i><div>IT Savodxonlik<small>Digital skills</small></div></div>
+<div class="fl f3"><i>EN</i><div>English<small>IELTS &amp; General</small></div></div></div>
+</div></div>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="about"><div class="w ab">
+<div><span class="tag">Biz haqimizda</span><h2>Har bir o‘quvchi alohida yondashuvga loyiq.</h2><p class="sub" style="margin:0">Biz faqat dars o‘tmaymiz. O‘quvchining maqsadini tushunamiz, bilim darajasini aniqlaymiz va shu maqsadga olib boradigan yo‘lni birga quramiz.</p></div>
+<div class="steps"><div class="st"><b>1</b>Level test</div><div class="st"><b>2</b>Individual plan</div><div class="st"><b>3</b>Professional mentor</div><div class="st"><b>4</b>Real progress</div></div>
+</div></section>
+
+<section style="padding-top:0"><div class="w"><span class="tag">Why Bright</span><h2>Nega aynan Bright Education?</h2><div class="cards4" style="margin-top:28px">
+<a class="c" href="#about"><i>◎</i><h3>Individual yondashuv</h3><p>Har bir o‘quvchining darajasi, maqsadi va o‘rganish tezligiga mos individual reja tuziladi.</p></a>
+<a class="c" href="#teachers"><i>✦</i><h3>Kuchli ustozlar</h3><p>O‘z fanini chuqur biladigan, tajribali va o‘quvchi bilan ishlashni biladigan mentorlar.</p></a>
+<a class="c" href="#results"><i>↗</i><h3>Real natija</h3><p>Har bir bosqichda o‘quvchining rivojlanishi kuzatiladi va natijalar tahlil qilinadi.</p></a>
+<a class="c" href="#directions"><i>◉</i><h3>Zamonaviy muhit</h3><p>Qulay muhit, zamonaviy texnologiyalar va interaktiv darslar orqali o‘rganish jarayoni yanada samarali.</p></a>
+</div></div></section>
+
+<section id="directions" style="padding-top:0"><div class="w"><span class="tag">Yo‘nalishlar</span><h2>Bir markaz. Ko‘plab imkoniyat.</h2><p class="sub">Maqsadingiz qanday bo‘lishidan qat’i nazar, siz uchun mos yo‘nalish Bright Education'da mavjud.</p>
+<div class="dir" id="dir"></div>
+<div class="help"><div><small style="color:var(--sky);font-weight:700">Siz uchun</small><h3>To‘g‘ri yo‘nalishni topamiz.</h3></div><button class="btn p" data-open>Konsultatsiya →</button></div></div></section>
+
+<section id="results" style="padding-top:0"><div class="w"><span class="tag">Real natijalar</span><h2>Natija — bizning tilimiz.</h2><p class="sub">O‘quvchining rivojlanishi biz uchun eng muhim ko‘rsatkich.</p>
+<div class="res">
+<div class="r"><small>IELTS</small><h3>Jasur</h3><div><s>5.5</s> → <b>8</b></div></div>
+<div class="r"><small>MATEMATIKA</small><h3>Dilnoza</h3><div><s>62%</s> → <b>97%</b></div></div>
+<div class="r"><small>SAT MATH</small><h3>Sardor</h3><div><s>540</s> → <b>790</b></div></div>
+<div class="r"><small>ENGLISH</small><h3>Malika</h3><div><s>B1</s> → <b>C1</b></div></div>
+</div></div></section>
+
+<div class="q"><div class="w"><small>Bizning falsafamiz</small><h2>“Yaxshi ta’lim — bu ma’lumot emas. Bu o‘zgarish.”</h2></div></div>
+
+<section id="teachers">
+  <div class="w">
+    <span class="tag">Bizning ustozlar</span>
+    <h2>Kuchli ustozlar. Kuchli kelajak.</h2>
+    <div class="tch" style="margin-top:28px">
+
+      <!-- 1-Ustoz -->
+      <div class="t">
+        <div class="av">
+          <img src="husniddin.jpg" alt="Husniddin Ismoilov">
+        </div>
+        <span class="b">IELTS 8</span>
+        <h3 style="font-size:18px">Husniddin Ismoilov</h3>
+        <p>English &amp; IELTS Mentor<br>8 yil tajriba</p>
+      </div>
+
+      <!-- 2-Ustoz -->
+      <div class="t">
+        <div class="av">
+          <img src="azizbek.jpg" alt="Azizbek Abdusalomov">
+        </div>
+        <span class="b">Math A+</span>
+        <h3 style="font-size:18px">Azizbek Abdusalomov</h3>
+        <p>Matematika Mentori<br>10 yil tajriba</p>
+      </div>
+
+      <!-- 3-Ustoz -->
+      <div class="t">
+        <div class="av">
+          <img src="physics.png" alt="Shohruh Niyozov">
+        </div>
+        <span class="b">Physics A+</span>
+        <h3 style="font-size:18px">Shohruh Niyozov</h3>
+        <p>Fizika Mentori<br>15 yil tajriba</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0"><div class="w"><span class="tag">O‘quvchilar fikri</span><h2>Ularning fikri.</h2><div class="rv" style="margin-top:28px">
+<blockquote>“Bright Education'da 4 oy o‘qib, IELTS natijamni 5.5 dan 7.5 ga olib chiqdim. Eng yoqqani — har bir darsim nazorat qilindi.”<b>Madina</b><small>IELTS 7.5</small></blockquote>
+<blockquote>“Matematika menga doim qiyin tuyulardi. Ustoz bilan individual ishlaganimdan keyin masalalarni tushunish ancha osonlashdi.”<b>Abdulloh</b><small>Mathematics</small></blockquote>
+<blockquote>“IT savodxonlik kursi orqali kompyuterda ishlashni noldan o‘rgandim. Darslar asosan amaliy.”<b>Ziyoda</b><small>IT Savodxonlik</small></blockquote>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w"><span class="tag">Qanday ishlaymiz?</span><h2>Maqsaddan natijagacha.</h2><div class="pr" style="margin-top:28px">
+<div><b>01</b><h3>Murojaat</h3><p>Biz bilan bog‘lanasiz.</p></div><div><b>02</b><h3>Level test</h3><p>Bilim darajangizni aniqlaymiz.</p></div><div><b>03</b><h3>Reja</h3><p>Sizga mos ta’lim yo‘lini tuzamiz.</p></div><div><b>04</b><h3>Natija</h3><p>Progressingizni kuzatib boramiz.</p></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="w"><span class="tag">FAQ</span><h2>Savollaringiz bormi?</h2><div style="margin-top:24px">
+<details><summary>Bright Education'da qaysi fanlar bor?</summary><p>Bizda English, Matematika, IT Savodxonlik, Fizika, SAT, Ona tili va Adabiyot yo‘nalishlari mavjud.</p></details>
+<details><summary>Darslar online ham bo‘ladimi?</summary><p>Ha. Yo‘nalishga qarab online va offline ta’lim formatlari mavjud.</p></details>
+<details><summary>Kursga kirishdan oldin test topshiramanmi?</summary><p>Ha. Bilim darajangizni aniqlash uchun qisqa diagnostik test o‘tkazamiz.</p></details>
+<details><summary>Dars jadvali qanday?</summary><p>Guruh va yo‘nalishga qarab jadval individual tarzda belgilanadi.</p></details>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="w"><div class="fin"><span style="font-weight:700;opacity:.85">Boshlashga tayyormisiz?</span><h2 style="margin-top:8px">Kelajagingizni bugun boshlang.</h2><p>Sizga mos yo‘nalishni topish, kurs va jadval haqida ma’lumot olish uchun biz bilan bog‘laning.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="https://t.me/bright_eduschool" target="_blank" rel="noopener">Telegram orqali yozilish →</a><button class="btn o" data-open>Qo‘ng‘iroq qilish</button></div></div></div></section>
+</main>
+
+<footer><div class="w"><div class="fg">
+<div><a class="logo" href="#" style="color:var(--ink);font-size:18px">BRIGHT<b>EDU</b></a><p>Bilimni kelajakka aylantiradigan zamonaviy ta’lim markazi.</p></div>
+<div><h4>Sayt</h4><a href="#about">Biz haqimizda</a><a href="#directions">Yo‘nalishlar</a><a href="#results">Natijalar</a><a href="#teachers">Ustozlar</a></div>
+<div><h4>Yo‘nalishlar</h4><a href="#directions">English</a><a href="#directions">Matematika</a><a href="#directions">Fizika</a><a href="#directions">SAT</a></div>
+<div><h4>Aloqa</h4><a href="https://t.me/bright_eduschool" target="_blank" rel="noopener">Telegram</a><a href="https://instagram.com/bright_edu_school" target="_blank" rel="noopener">Instagram</a><a href="tel:+998999812549">+998 99 981 25 49</a></div>
+</div><div class="cp">© 2026 Bright Education. Ta’limda yangi daraja.</div></div></footer>
+
+<dialog id="fd"></dialog>
+<dialog id="dl"><button class="x" id="dx" aria-label="Yopish">×</button><h3>Biz bilan bog‘laning.</h3><p style="color:var(--ink2);font-size:14px;margin-bottom:8px">Qo‘ng‘iroq qiling yoki Instagram’da yozing.</p><a class="ct" href="tel:+998911245033"><i><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><span><small>Telefon</small><b>+998 91 124 50 33</b></span><span class="go">→</span></a><a class="ct" href="tel:+998999812549"><i><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><span><small>Telefon</small><b>+998 99 981 25 49</b></span><span class="go">→</span></a><a class="ct" href="https://instagram.com/bright_edu_school" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></i><span><small>Instagram</small><b>@bright_edu_school</b></span><span class="go">→</span></a></dialog>
+
+<button id="cb" aria-label="AI yordamchi"><span id="ci">💬</span><span class="n" id="nb">1</span></button>
+<div id="cw" class="h" role="dialog" aria-label="Bright AI yordamchi">
+<div class="ch"><div class="a">✦</div><div><b>Bright AI</b><small>Onlayn · Bir zumda javob beradi</small></div><button id="cr" aria-label="Suhbatni yangilash" title="Yangilash">↻</button><button id="cc" aria-label="Yopish">×</button></div>
+<div id="ms"></div>
+<form class="cf" id="cf"><input id="ci2" placeholder="Savolingizni yozing…" autocomplete="off" aria-label="Xabar"><button aria-label="Yuborish">➤</button></form></div>
+
+<script src="subjects.js"></script>
+<script>
+const D=[["EN","English","General English · IELTS"],["∑","Matematika","Maktab · Imtihon · Abituriyent"],["</>","IT Savodxonlik","Kompyuter · Digital skills"],["Φ","Fizika","Nazariya · Masalalar · Imtihon"],["SAT","SAT","Math · Reading · Writing"],["UZ","Ona tili","Grammatika · Imlo · Test"],["А","Adabiyot","Asarlar · Tahlil · Imtihon"],["⚖","Huquq","Konstitutsiya · Qonun · Imtihon"],["⌛","Tarix","O‘zbekiston · Jahon · Imtihon"],["TR","Turk tili","Grammatika · Lug‘at · Suhbat"],["한","Koreys tili","Hangul · Grammatika · TOPIK"],["⚗","Kimyo","Nazariya · Formulalar · Masalalar"],["🧬","Biologiya","Anatomiya · Botanika · Test"],["SCI","Science","Physics · Chemistry · Biology"],["RUS","Rus tili","Литература · Грамматика · TORFL"]];
+const $=s=>document.querySelector(s);
+$('#dir').innerHTML=D.map((d,i)=>`<button class="d" data-subj="${i}"><b>${d[0]}</b><h3>${d[1]}</h3><p>${d[2]}</p><em>Batafsil →</em></button>`).join('');
+$('#mq').innerHTML=(D.map(d=>d[1].toUpperCase()+'<span>✦</span>').join('')).repeat(2);
+const dl=$('#dl'),fd=$('#fd'),fe=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function openSubj(i){const d=D[i],sj=SUBJ.find(x=>x.n===d[1])||{n:d[1],t:[]},T=sj.t.length?sj.t:[''];let n=0;
+ const body=T.map(t=>{const L=lkGet(sj.n,t).filter(l=>lkClean(l.url)),h=L.map(l=>{const k=SRC[l.src]?l.src:srcOf(l.url);n++;return`<a class="ct sl" href="${fe(lkClean(l.url))}" target="_blank" rel="noopener noreferrer"><i class="si">${SRC[k].i}</i><span><b>${SRC[k].l}</b></span><span class="go">→</span></a>`}).join('');
+  return`<div class="tb2">${t?`<div class="tn">${fe(t)}</div>`:''}${h||'<p class="nl">Havolalar tez orada qo‘shiladi.</p>'}</div>`}).join('');
+ fd.innerHTML=`<button class="x" id="fx" aria-label="Yopish">×</button><h3>${fe(d[1])}</h3><p style="color:var(--ink2);font-size:14px;margin-bottom:6px">${fe(d[2])}</p>${body}<button class="btn o fc" data-open>Biz bilan bog‘lanish</button>`;
+ $('#fx').onclick=()=>fd.close();fd.showModal()}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-subj]');if(t)openSubj(+t.dataset.subj);else if(e.target.closest('#fd [data-open]'))fd.close()});
+fd.addEventListener('click',e=>{if(e.target===fd)fd.close()});
+document.addEventListener('click',e=>{const t=e.target.closest('[data-open]');if(t)dl.showModal()});
+$('#dx').onclick=()=>dl.close();dl.addEventListener('click',e=>{if(e.target===dl)dl.close()});
+$('#bg').onclick=()=>$('#nv').classList.toggle('on');$('#nv').onclick=()=>$('#nv').classList.remove('on');
+document.querySelectorAll('[data-to]').forEach(el=>{const to=+el.dataset.to;let n=0;const t=setInterval(()=>{n+=Math.ceil(to/40);if(n>=to){n=to;clearInterval(t)}el.textContent=n+'+'},30)});
+
+/* ---- AI assistant ---- */
+const TG='<a href="https://t.me/bright_eduschool" target="_blank" rel="noopener">Telegram</a>';
+const PH='<a href="tel:+998999812549">+998 99 981 25 49</a>';
+const PH2='<a href="tel:+998996505714">+998 99 650 57 14</a>';
+const LIST=D.map(d=>d[1]).join(', ');
+const KB=[
+{k:/nechta o.?quvchi|o.?quvchilar soni|necha o.?quvchi|students/,a:'Bizda 2000+ o‘quvchi tahsil oladi, 15+ yo‘nalish mavjud. Siz ham shular qatoriga qo‘shilishingiz mumkin!'},
+{k:/salom|assalom|hello|hi\b|privet|привет/,a:'Assalomu alaykum! 👋 Men Bright Education yordamchisiman. Kurslar, jadval va qabul haqida so‘rashingiz mumkin.'},
+{k:/narx|qancha|pul|to.?lov|price|cost|chegirma|скидк|цен/,a:'Kurs narxi yo‘nalish, format (online/offline) va guruhga qarab belgilanadi. Aniq narxni bepul konsultatsiyada aytishadi: '+PH2+' yoki '+TG+'.'},
+{k:/fan|yo.?nalish|kurs|nima o.?rgat|qaysi|course|subject|направлен/,a:'Bizda 15+ yo‘nalish bor: '+LIST+'. Qaysi biri qiziq? Nomini yozing — batafsil aytaman.'},
+{k:/online|onlayn|offline|masofa|zoom/,a:'Ha, yo‘nalishga qarab online ham, offline ham o‘qish mumkin. Qaysi format sizga mos ekanini konsultatsiyada tanlab beramiz.'},
+{k:/test|daraja|level|diagnost/,a:'Kursdan oldin qisqa diagnostik (level) test o‘tkazamiz. U bilim darajangizni aniqlaydi va individual reja tuzishga yordam beradi.'},
+{k:/jadval|vaqt|soat|kun|schedule|расписан/,a:'Jadval guruh va yo‘nalishga qarab individual belgilanadi. Sizga qulay vaqtni '+PH+' orqali kelishib olishingiz mumkin.'},
+{k:/ustoz|o.?qituvchi|mentor|teacher|преподав/,a:'Ustozlarning barchasi kamida 8 yillik tajribaga ega va eng yuqori balli sertifikatlarga ega mentorlar.'},
+{k:/natija|result|yutuq|ballar/,a:'Real natijalardan: IELTS 5.5 → 7, Matematika 62% → 97%, SAT Math 550 → 780, English B2 → C2. Har bosqichda o‘quvchi progressi kuzatib boriladi.'},
+{k:/aloqa|telefon|raqam|bog.?lan|contact|manzil|adres|qayerda|lokatsiya/,a:'Bog‘lanish: '+PH2+', +998 91 124 50 33, '+TG+' yoki <a href="https://instagram.com/bright_edu_school" target="_blank" rel="noopener">Instagram</a> @bright_edu_school.'},
+{k:/ro.?yxat|yozil|qabul|boshla|register|apply|konsult/,a:'Boshlash oson: 1) murojaat, 2) level test, 3) individual reja, 4) natija kuzatuvi. Hoziroq yozilish uchun saytdagi <b>Bog‘lanish</b> tugmasini bosing yoki '+TG+'.'},
+{k:/rahmat|thanks|spasibo|спасибо/,a:'Arzimaydi! 😊 Yana savol bo‘lsa, shu yerdaman.'}
+];
+KB.unshift(
+{k:/panel|sidebar|qulf|buxgalter|kabinet.*bolim|bolim.*kabinet/,a:'Kabinetga kirgach chap tomonda bo‘limlar paneli (☰) chiqadi: Rahbariyat, Admin, Rahbar, Buxgalteriya va O‘quvchilar. Admin hamma narsani boshqaradi, Rahbar hamma ma’lumotni ko‘radi (o‘zgartira olmaydi), Buxgalteriya moliya bilan ishlaydi. Oddiy akkaunt faqat O‘quvchilar bo‘limini ko‘ra oladi, o‘zgartira olmaydi. Maxsus rollarni faqat maktab ma’muriyati beradi.'},
+{k:/kabinet|login|parol|akkaunt|account|hisobim|saytga kir|tizimga kir/,a:'Saytning yuqorisidagi <b>KIRISH</b> tugmasini bosing — <a href="auth.html">kirish sahifasi</a> ochiladi. Akkauntingiz bo‘lmasa «Ro‘yxatdan o‘tish» orqali ism, login/email va parol bilan yarating, so‘ng bosh sahifaga qaytasiz va chap tomonda bo‘limlar paneli (☰) chiqadi. Parolni hech kimga bermang.'},
+{k:/sinov/,a:'Yangi o‘quvchining birinchi oyi «Sinovda» deb belgilanishi mumkin — shu oyda qarz hisoblanmaydi. Shartlarini ma’muriyat aytadi: '+PH2+' yoki '+TG+'.'}
+);
+const DI={ielts:'English',english:'English',ingliz:'English',matem:'Matematika',math:'Matematika',algebra:'Matematika',it:'IT Savodxonlik',kompyuter:'IT Savodxonlik',fizika:'Fizika',sat:'SAT',ona:'Ona tili',adabiyot:'Adabiyot',huquq:'Huquq',tarix:'Tarix',turk:'Turk tili',korey:'Koreys tili',topik:'Koreys tili',kimyo:'Kimyo',biolog:'Biologiya',science:'Science',rus:'Rus tili'};
+const CH=['Qaysi fanlar bor?','Narxlar qancha?','Online o‘qish mumkinmi?','Level test nima?','Jadval qanday?','Ustozlar kimlar?','Bog‘lanish'];
+const ms=$('#ms'),cw=$('#cw');let busy=false,first=true;
+const norm=s=>s.toLowerCase().replace(/[ʻʼ’‘`']/g,"'").replace(/o'/g,'o').replace(/g'/g,'g');
+function add(html,cls){const d=document.createElement('div');d.className='m '+cls;d.innerHTML=html;ms.appendChild(d);ms.scrollTop=ms.scrollHeight;return d}
+function chips(list){const w=document.createElement('div');w.className='qk';list.forEach(c=>{const b=document.createElement('button');b.textContent=c;b.onclick=()=>{w.remove();send(c)};w.appendChild(b)});ms.appendChild(w);ms.scrollTop=ms.scrollHeight}
+function reply(q){const n=norm(q);
+ for(const k in DI){if(new RegExp('\\b'+k).test(n)){const d=D.find(x=>x[1]===DI[k]);return {a:`<b>${d[1]}</b> — ${d[2]}. Level test orqali darajangizni aniqlab, individual reja tuzamiz. Narx va jadval uchun: ${PH} yoki ${TG}.`,c:['Narxlar qancha?','Jadval qanday?','Ro‘yxatdan o‘tish']}}}
+ const h=KB.find(x=>x.k.test(n));
+ if(h)return {a:h.a,c:CH.filter(c=>norm(c)!==n).sort(()=>.5-Math.random()).slice(0,3)};
+ return {a:'Bu savolga aniq javob bera olmayman. Mutaxassisimiz yordam beradi: '+PH+' yoki '+TG+'. Yoki quyidagilardan birini tanlang:',c:CH.slice(0,4)}}
+function typeOut(el,html,done){const t=document.createElement('div');t.innerHTML=html;const txt=t.textContent;let i=0;el.textContent='';
+ const iv=setInterval(()=>{i+=2;el.textContent=txt.slice(0,i);ms.scrollTop=ms.scrollHeight;if(i>=txt.length){clearInterval(iv);el.innerHTML=html;ms.scrollTop=ms.scrollHeight;done()}},16)}
+function bot(r){busy=true;const d=add('<div class="ty" style="padding:0"><i></i><i></i><i></i></div>','b');
+ setTimeout(()=>typeOut(d,r.a,()=>{busy=false;stamp(d);if(r.c)chips(r.c)}),600+Math.random()*500)}
+function send(t){t=t.trim();if(!t||busy)return;ms.querySelectorAll('.qk').forEach(x=>x.remove());const u=add('','u');u.textContent=t;stamp(u);bot(reply(t))}
+$('#cf').onsubmit=e=>{e.preventDefault();const i=$('#ci2');send(i.value);i.value='';$('#cf').classList.remove('has')};
+function toggle(){const open=cw.classList.toggle('h');$('#ci').textContent=open?'💬':'×';$('#nb').hidden=true;
+ if(!open&&first){first=false;setTimeout(welcome,200)}
+ if(!open)setTimeout(()=>$('#ci2').focus(),350)}
+$('#cb').onclick=toggle;$('#cc').onclick=toggle;
+setTimeout(()=>{if(!cw.classList.contains('h'))return;const t=document.createElement('div');t.id='tz';t.innerHTML='Savolingiz bormi? <b>Menga yozing</b> 👋';document.body.appendChild(t);t.onclick=()=>{t.remove();toggle()};$('#cb').addEventListener('click',()=>t.remove())},4000);
+(()=>{const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,hv=matchMedia('(hover:hover)').matches;if(rm)return;
+const H=document.querySelector('header'),bar=document.createElement('div');bar.id='pg';document.body.appendChild(bar);
+const onS=()=>{const m=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(m>0?scrollY/m:0)+')';H.classList.toggle('s',scrollY>20)};addEventListener('scroll',onS,{passive:true});onS();
+const h1=document.querySelector('.hero h1');let i=0;const mk=n=>{const s=document.createElement('i');s.className='wd';s.style.setProperty('--i',i++);s.appendChild(n);return s};
+[...h1.childNodes].forEach(n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(w=>f.append(w.trim()?mk(document.createTextNode(w)):w));n.replaceWith(f)}else n.replaceWith(mk(n))});
+const sel='.tag,h2,.sub,.st,.c,.d,.r,.t,.rv blockquote,.pr>div,details,.help,.fin,.q small,.fg>div';const sib=new Map;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');io.unobserve(t);setTimeout(()=>t.classList.remove('rev','in'),1700+parseFloat(t.style.getPropertyValue('--d'))*1000)}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll(sel).forEach(el=>{if(el.closest('.hero')||(el.closest('.fin')&&!el.classList.contains('fin')))return;const p=el.parentElement,k=sib.get(p)||0;sib.set(p,k+1);el.style.setProperty('--d',Math.min(k*.07,.55)+'s');el.classList.add('rev');io.observe(el)});
+if(!hv)return;
+document.querySelectorAll('.c,.d,.r,.t,.rv blockquote,.st').forEach(el=>{el.classList.add('tilt');let pe=null,rq=0;el.addEventListener('pointermove',e=>{pe=e;if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const r=el.getBoundingClientRect(),x=(pe.clientX-r.left)/r.width,y=(pe.clientY-r.top)/r.height;el.style.setProperty('--mx',x*100+'%');el.style.setProperty('--my',y*100+'%');el.style.setProperty('--rx',((.5-y)*4)+'deg');el.style.setProperty('--ry',((x-.5)*5)+'deg')})});el.addEventListener('pointerleave',()=>{el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg')})});
+const hero=document.querySelector('.hero');hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--px',((e.clientX-r.left)/r.width-.5).toFixed(3));hero.style.setProperty('--py',((e.clientY-r.top)/r.height-.5).toFixed(3))});
+document.querySelectorAll('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.translate=(e.clientX-r.left-r.width/2)*.18+'px '+(e.clientY-r.top-r.height/2)*.28+'px'});b.addEventListener('pointerleave',()=>b.style.translate='')});
+const g=document.createElement('div');g.id='gl';document.body.appendChild(g);let tx=innerWidth/2,ty=innerHeight/3,cx=tx,cy=ty;addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY},{passive:true});
+let on=0;function f(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;g.style.transform='translate3d('+(cx-260)+'px,'+(cy-260)+'px,0)';if(Math.abs(tx-cx)+Math.abs(ty-cy)>.5)requestAnimationFrame(f);else on=0}addEventListener('pointermove',()=>{if(!on){on=1;requestAnimationFrame(f)}},{passive:true});
+})();
+document.querySelectorAll('.btn,.d em').forEach(el=>{el.innerHTML=el.innerHTML.replace(/([→↗])/,'<span class="ar">$1</span>')});
+function stamp(el){const d=new Date(),s=document.createElement('span');s.className='tm';s.textContent=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');el.appendChild(s)}
+const TL=[['📚','Kurslar','Qaysi fanlar bor?'],['💳','Narxlar','Narxlar qancha?'],['🗓','Jadval','Jadval qanday?'],['☎','Bog‘lanish','Bog‘lanish'],['🔐','Kabinet','Kabinetga qanday kiraman?'],['🧭','Bo‘limlar','Kabinetda qaysi bo‘limlar bor?']];
+function welcome(){add('<div class="wa">✦</div><b>Assalomu alaykum! 👋</b><p>Men Bright AI — kurslar, narxlar, jadval va qabul bo‘yicha yordam beraman. Nimadan boshlaymiz?</p>','wc');const g=document.createElement('div');g.className='qk tiles';TL.forEach(t=>{const b=document.createElement('button');b.innerHTML='<i>'+t[0]+'</i><span>'+t[1]+'</span>';b.onclick=()=>{g.remove();send(t[2])};g.appendChild(b)});ms.appendChild(g)}
+$('#cr').onclick=()=>{if(busy)return;ms.innerHTML='';welcome()};
+$('#ci2').addEventListener('input',e=>$('#cf').classList.toggle('has',e.target.value.trim().length>0));
+</script>
+<script src="site-auth.js"></script>
+</body>
+</html>

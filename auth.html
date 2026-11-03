@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kirish — Bright Education</title><link rel="icon" href="bss.png"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body class="au"><div class="box"><a class="lg" href="index.html">BRIGHT<b>EDU</b></a>
+<div class="tabs"><button id="t1" class="a">Kirish</button><button id="t2">Ro‘yxatdan o‘tish</button></div>
+<form id="f"><div id="nm" hidden><label>Ism va familiya</label><input id="n" autocomplete="name"></div>
+<label>Login yoki email</label><input id="l" autocomplete="username" required>
+<label>Parol</label><input id="p" type="password" autocomplete="current-password" required>
+<div id="p2w" hidden><label>Parolni qayta kiriting</label><input id="p2" type="password" autocomplete="new-password"></div>
+<p class="err" id="e"></p><button class="btn" id="go">Kirish</button></form><a class="back" href="index.html">← Bosh sahifaga</a></div>
+<script src="core.js"></script><script>
+let reg=false;const $=s=>document.getElementById(s);
+if(sessionStorage.getItem(S))location.replace('index.html');
+function mode(r){reg=r;$('t1').className=r?'':'a';$('t2').className=r?'a':'';$('nm').hidden=$('p2w').hidden=!r;$('go').textContent=r?'Ro‘yxatdan o‘tish':'Kirish';$('e').textContent=''}
+$('t1').onclick=()=>mode(0);$('t2').onclick=()=>mode(1);
+$('f').onsubmit=async e=>{e.preventDefault();const l=$('l').value.trim().toLowerCase(),p=$('p').value,er=m=>$('e').textContent=m;load();
+ if(!reg){const u=db.users.find(x=>x.login.toLowerCase()===l);
+  if(!u||u.hash!==await hs(p))return er('Login yoki parol noto‘g‘ri');
+  if(!u.active)return er('Akkaunt bloklangan');
+  sessionStorage.setItem(S,JSON.stringify({id:u.id}));return location.href='index.html'}
+ const n=$('n').value.trim();
+ if(n.length<3)return er('Ism va familiyani kiriting');
+ if(p.length<8)return er('Parol kamida 8 ta belgi bo‘lsin');
+ if(p!==$('p2').value)return er('Parollar mos emas');
+ if(db.users.some(x=>x.login.toLowerCase()===l))return er('Bu login band');
+ const u={id:uid(),name:n,login:l,hash:await hs(p),role:'user',active:true}; // faqat oddiy rol
+ db.users.push(u);save();sessionStorage.setItem(S,JSON.stringify({id:u.id}));location.href='index.html'};
+</script></body></html>

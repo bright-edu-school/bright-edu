@@ -1,0 +1,44 @@
+:root{--ink:#0b1030;--i2:#555b80;--bg:#eef1fb;--cd:#fff;--ln:rgba(20,30,90,.12);--v:#4f46e5;--g:linear-gradient(135deg,#4f46e5,#06b6d4)}
+@media(prefers-color-scheme:dark){:root{--ink:#eaf0ff;--i2:#9aa3d0;--bg:#070a1f;--cd:#111634;--ln:rgba(255,255,255,.12)}}
+*{box-sizing:border-box;margin:0}body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.lg{font-weight:800;font-size:20px;color:var(--ink);text-decoration:none}.lg b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+button,input,select,textarea{font:inherit;color:inherit}input,select,textarea{width:100%;padding:11px 13px;border-radius:12px;border:1px solid var(--ln);background:var(--cd)}label{display:block;font-weight:600;font-size:13px;margin:12px 0 4px}
+.btn{background:var(--g);color:#fff;border:0;border-radius:99px;padding:11px 20px;font-weight:600;cursor:pointer;margin-top:14px}.btn.s{padding:7px 13px;margin:0;font-size:13px}.btn.o{background:var(--cd);color:var(--ink);border:1px solid var(--ln)}
+.au{display:grid;place-items:center;min-height:100vh;padding:16px}.box{background:var(--cd);border:1px solid var(--ln);border-radius:26px;padding:30px;width:min(420px,100%);box-shadow:0 30px 60px -30px #4f46e5}
+.tabs{display:flex;gap:6px;margin:18px 0 6px;background:var(--bg);padding:4px;border-radius:99px}.tabs button{flex:1;border:0;background:none;padding:9px;border-radius:99px;font-weight:600;cursor:pointer}.tabs .a{background:var(--g);color:#fff}
+.box .btn{width:100%}.err{color:#ef4444;font-size:13px;min-height:18px;margin-top:8px}.back{display:block;text-align:center;margin-top:14px;color:var(--i2);font-size:14px;text-decoration:none}
+#sb{position:fixed;inset:0 auto 0 0;width:248px;background:var(--cd);border-right:1px solid var(--ln);padding:22px 14px;display:flex;flex-direction:column;gap:6px;z-index:30;transition:transform .35s}
+.nv{display:block;text-align:left;width:100%;padding:12px 14px;border-radius:14px;border:0;background:none;font-weight:600;cursor:pointer;color:var(--i2);text-decoration:none;font-size:15px}.nv:hover{background:var(--bg)}.nv.a{background:var(--g);color:#fff}#sb .lg{margin:0 0 14px 8px}
+#mn{margin-left:248px}.tb{display:flex;align-items:center;gap:12px;padding:14px 24px;background:var(--cd);border-bottom:1px solid var(--ln);position:sticky;top:0;z-index:20}.tb h1{font-size:20px;flex:1}.us{text-align:right}.us small{display:block;color:var(--v);font-weight:600;font-size:12px}.bg{display:none;border:0;background:none;font-size:24px;cursor:pointer}
+main{padding:24px;max-width:1200px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:16px 0}.card{background:var(--cd);border:1px solid var(--ln);border-radius:18px;padding:18px}.card small{color:var(--i2);font-weight:600}.card b{display:block;font-size:22px;letter-spacing:-.02em}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.ch{border:1px solid var(--ln);background:var(--cd);border-radius:99px;padding:8px 15px;font-weight:600;cursor:pointer;font-size:14px}.ch.a{background:var(--g);color:#fff;border-color:transparent}.row input,.row select{width:auto;min-width:130px}
+.tw{overflow-x:auto;background:var(--cd);border:1px solid var(--ln);border-radius:18px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--ln);white-space:nowrap}th{color:var(--i2);font-size:12px;text-transform:uppercase}
+.bd{padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700}.paid,.in{background:#10b98122;color:#0a9d6a}.part{background:#f59e0b22;color:#b45309}.none,.out{background:#ef444422;color:#dc2626}
+dialog{border:1px solid var(--ln);border-radius:24px;padding:26px;width:min(440px,94vw);background:var(--cd);color:var(--ink);margin:auto}dialog::backdrop{background:#0b103099}h3{margin:18px 0 8px}
+#tt{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:99px;opacity:0;transition:.3s;z-index:99;pointer-events:none}#tt.on{opacity:1}.mt{color:var(--i2);padding:20px}
+@media(max-width:860px){#sb{transform:translateX(-100%)}#sb.on{transform:none}#mn{margin-left:0}.bg{display:block}main{padding:14px}}
+/* ---- chiroyli qatlam: asosiy sayt uslubiga moslash ---- */
+body{position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(38% 34% at 12% 14%,#6366f155,transparent 70%),radial-gradient(34% 34% at 88% 10%,#22d3ee55,transparent 70%),radial-gradient(40% 40% at 70% 92%,#a78bfa44,transparent 70%)}
+.box,#sb,.tb,.card,.tw,dialog{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 20px 40px -28px rgba(30,40,130,.45)}
+.box{border-radius:30px;padding:34px;animation:up .7s cubic-bezier(.25,.8,.25,1) both}@keyframes up{from{opacity:0;transform:translateY(20px)}}
+input:focus,select:focus{outline:0;border-color:var(--v);box-shadow:0 0 0 4px #4f46e51f}
+.btn{transition:transform .35s,box-shadow .35s}.btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px -12px #4f46e5}.btn.o:hover{box-shadow:none}
+.nv{transition:background .3s,transform .3s}.nv:hover{transform:translateX(4px)}.nv.a{box-shadow:0 12px 24px -12px #4f46e5}
+.tb{border-radius:0 0 22px 22px}.us b{font-size:14px}
+.card{border-radius:22px;position:relative;overflow:hidden;transition:transform .4s,border-color .4s}.card:hover{transform:translateY(-4px);border-color:#4f46e566}
+.grid .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--g)}
+.card b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:24px}
+.tw{border-radius:22px}tr:hover td{background:color-mix(in srgb,var(--v) 6%,transparent)}th{position:sticky;top:0;background:var(--cd)}
+main>*{animation:up .5s cubic-bezier(.25,.8,.25,1) both}
+.ch{transition:all .3s}.ch:hover{border-color:var(--v)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.trial{background:#06b6d422;color:#0891b2}.na{background:#9993;color:var(--i2)}
+/* ---- jadval va masshtab (Ctrl +/-) ---- */
+#mn,main{min-width:0}main{max-width:none}
+.tw{max-width:100%}th,td{white-space:normal;vertical-align:middle}
+.tw td:last-child,.tw th:last-child{position:sticky;right:0;background:var(--cd);box-shadow:-10px 0 14px -12px rgba(30,40,130,.35)}
+.ac{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;min-width:120px}.ac .btn.s{padding:6px 11px}
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr))}
+dialog{max-height:92vh;overflow:auto}
+@media(max-width:1200px){th,td{padding:9px 10px;font-size:13px}main{padding:16px}.tb{padding:12px 16px}}
